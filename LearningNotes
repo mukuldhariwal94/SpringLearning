@@ -1,0 +1,91 @@
+1. Rapid application development 
+2. Hits the main thread
+3. Spring boot has new parent pom
+4. No need to have version matching issues
+5. @RestController
+6. @RequestMapping
+7. Can use spring cli to initialize
+
+
+How does spring boot work? 
+
+We never ran the war file which is weird
+
+1) App starts from java main method
+2) Spring boot initializes the context 
+3) Embedded server is present
+
+@SpringBootApplication tells where the app has to be started
+@EnableAutoConfiguration - autoconfigs and scans class path for any spring stuff
+@ComponentScan - search for all spring component scan
+KEEP THE MAIN CLASS IN THE HIGHEST LEVEL
+Why we moved to containerless deployment 
+
+Why we moved away from Jboss, Weblogic and Tomcat ?
+a) setup required
+b) web.xml file
+c) Env configuration - JNDI
+
+
+Advantage -> 
+1) anywhere where java is installed it works
+2) Can be deployed to a container as well
+3) Can be debugged and tested
+
+springboot , spring mvc , spring - core
+
+serve static content from resources folder and put into public folder
+
+
+What did spring boot did ? 
+1) adding spring boot-starter-web adds all spring mvc
+2) Spring boot jackson json library
+3) setup static resource
+4) UTF 8 encoding
+
+Changing the env and properties
+1) application.properties file can be used to change the properties
+2) YAML based configs
+3) can define additional profile properties
+ex - application-dev.properties
+using spring profiles
+1) add application properties file
+lots of properties in spring boot
+
+logging
+changing server port
+
+specfiy profiles
+
+connecting data source and database
+
+Learning - Spring Data JPA and Flyway
+
+Persistence tier - 
+REST API -> Tie JPA and Springdata JPA , embeddable h2 Database to provision
+
+FlywayDB Migration to migrate databases
+
+JPA - java persistence API -> for database connectivity
+
+we donot use 
+DataSource pooling - improves 
+Spring automatically improves pull
+
+tomcat-jdbc default pooling library
+
+flyway ?
+
+hibernate is shut off
+
+ORM -> Object relational mapping (hibernate etc)
+app config
+
+can do configurations from java code
+
+data configuration is done programatically
+
+
+JPA
+
+still don't get the use of fly way
