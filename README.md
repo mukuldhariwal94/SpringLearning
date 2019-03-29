@@ -77,12 +77,14 @@ Learning - Spring Data JPA and Flyway
  Spring automatically improves pull
  tomcat-jdbc default pooling library
 
+![SpringLearning](SpringLearning.gif)
+# Confusions 
 # flyway ?
 
 # hibernate is shut off
 
- ORM -> Object relational mapping (hibernate etc)
-app config
+# ORM -> Object relational mapping (hibernate etc)
+ app config
 
 can do configurations from java code
 
